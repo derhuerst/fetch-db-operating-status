@@ -19,7 +19,29 @@ npm install fetch-db-operating-status
 ## Usage
 
 ```js
-todo
+const fetchOperatingStatus = require('.')
+
+fetchOperatingStatus()
+.then(console.log)
+.catch(console.error)
+```
+
+```js
+{
+	messageId: 9086315,
+	translations: {
+		en: {
+			title: 'Strike is over',
+			message: 'Minor disruption to rail services can still occur.',
+			link: 'https://www.bahn.de/p/view/service/aktuell/index.shtml'
+		},
+		de: {
+			title: 'Nach Streikende: Bahnverkehr stabilisiert sich weiter.',
+			message: 'Für Dienstag, 11.12. regulärer Zugverkehr erwartet. ',
+			link: 'https://www.bahn.de/p/view/service/aktuell/index.shtml?dbkanal_007=L01_S01_D001_KIN0001_blitzbox-bahndeaktuell-021218_LZ01'
+		}
+	}
+}
 ```
 
 
