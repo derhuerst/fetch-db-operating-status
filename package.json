@@ -1,0 +1,33 @@
+{
+	"name": "fetch-db-operating-status",
+	"description": "Fetch alerts about the operating status of Deutsche Bahn.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"example.js"
+	],
+	"keywords": [
+		"db",
+		"deutsche bahn",
+		"bahn.de",
+		"public transport",
+		"transit"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/fetch-db-operating-status",
+	"repository": "derhuerst/fetch-db-operating-status",
+	"bugs": "https://github.com/derhuerst/fetch-db-operating-status/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=8"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+	},
+	"scripts": {
+		"test": "env NODE_ENV=dev node test.js",
+		"prepublishOnly": "npm test"
+	}
+}
