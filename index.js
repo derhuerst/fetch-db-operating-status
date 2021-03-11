@@ -23,9 +23,11 @@ const fetchOperatingStatus = () => {
 			err.statusCode = res.status
 			throw err
 		}
-		return res.json()
+		return res.text()
 	})
-	.then((data) => {
+	.then((body) => {
+		const data = /^\s+$/.test(body) ? {} : JSON.parse(body)
+
 		const translations = Object.create(null)
 		for (const language of Object.keys(data)) {
 			if (language === 'id') continue
@@ -38,7 +40,7 @@ const fetchOperatingStatus = () => {
 		}
 
 		return {
-			messageId: data.id,
+			messageId: data.id || null,
 			translations
 		}
 	})
