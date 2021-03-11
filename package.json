@@ -20,7 +20,7 @@
 	"bugs": "https://github.com/derhuerst/fetch-db-operating-status/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=8"
+		"node": ">=12"
 	},
 	"dependencies": {
 		"fetch-ponyfill": "^6.0.2"
