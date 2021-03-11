@@ -1,7 +1,7 @@
 {
 	"name": "fetch-db-operating-status",
-	"description": "Fetch alerts about the operating status of Deutsche Bahn.",
-	"version": "1.0.0",
+	"description": "Fetch major alerts about the operating status of Deutsche Bahn.",
+	"version": "1.0.1",
 	"main": "index.js",
 	"files": [
 		"index.js",
